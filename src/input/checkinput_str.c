@@ -6,7 +6,7 @@
 /*   By: dnguyen <dnguyen@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 18:27:33 by dnguyen           #+#    #+#             */
-/*   Updated: 2022/07/20 00:25:32 by dnguyen          ###   ########.fr       */
+/*   Updated: 2022/07/20 01:31:58 by dnguyen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,11 @@ int	checkint_str(char **argv)
 	while (argv[i])
 	{
 		temp = ft_atol(argv[i]);
-		if (temp >= 2147483648)
-			write_error();
-		if (temp < -2147483648)
-			write_error();
+		if (temp >= 2147483648 || temp < -2147483648)
+		{
+			write(1, "Error\n", 7);
+			return (0);
+		}
 		i++;
 	}
 	return (1);
