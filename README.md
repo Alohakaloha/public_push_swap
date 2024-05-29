@@ -1,14 +1,28 @@
-<h2>
-This project will make you sort data on a stack, with a limited set of instructions, using
-the lowest possible number of actions. To succeed you’ll have to manipulate various
-types of algorithms and choose an appropriate solution (out of many) for an
-optimized data sorting.
-</h2>
-<h3>
+## This project will make you sort data on a stack, with a limited set of instructions, using the lowest possible number of actions. To succeed you’ll have to manipulate various types of algorithms and choose an appropriate solution (out of many) for an optimized data sorting.
+
+
+### Usage:
+To compile the project run:
+``` 
+make
+```
+The project takes integers or a string of integers:
+
+```
+./push_swap 1 4 2 5 9 20
+```
+or
+
+```
+./push_swap "1 4 2 5 9 20"
+``` 
+
+
+<h4>
   The rules: 
 
 • You have 2 stacks named a and b.
-</h3>
+</h4>
 <H4>
   
 • At the beginning:\
